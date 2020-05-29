@@ -1,17 +1,22 @@
 import Head from 'next/head'
 import React from 'react'
 import Navbar from '../components/Navbar'
-
+import Container from '../components/Container'
 
 function HomePage() {
-    return <div>
-        <Head>
-            <title>Porto Cell</title>
-        </Head>
-       <section>
-            <Navbar/>
-       </section>
-    </div>
-  }
-  
-  export default HomePage
+    return (
+        <section>
+            <Head>
+                <title>Porto Cell</title>
+            </Head>
+            <Navbar />
+
+            <Container>
+            <div>teste</div>
+            </Container>
+        </section>
+
+    )
+}
+
+export default HomePage
