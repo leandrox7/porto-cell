@@ -4,17 +4,36 @@ import Navbar from '../components/Navbar'
 import Container from '../components/Container'
 import Card from '../components/Card'
 import Data from '../src/marketplace.json'
-function HomePage() {
+import Marketplace from '../components/Marketplace'
+
+function MarketplacePage() {
     return (
         <section>
             <Navbar />
 
             <Container>
-            <Card data={Data[1]}></Card>
+               <Marketplace> 
+                   <Card data={Data[1]}></Card>
+                   <Card data={Data[1]}></Card>
+                   <Card data={Data[1]}></Card>
+                   <Card data={Data[1]}></Card>
+                   <Card data={Data[1]}></Card>
+                   <Card data={Data[1]}></Card>
+                   <Card data={Data[1]}></Card>
+                   <Card data={Data[1]}></Card>
+                   <Card data={Data[1]}></Card>
+                   <Card data={Data[1]}></Card>
+                   <Card data={Data[1]}></Card>
+                   <Card data={Data[1]}></Card>
+                   <Card data={Data[1]}></Card>
+
+               
+               </Marketplace>
+            
             </Container>
         </section>
 
     )
 }
 
-export default HomePage
+export default MarketplacePage
