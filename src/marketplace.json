@@ -1,0 +1,25 @@
+
+   [
+                {
+                  "id":1,
+                  "name": "Smartphone Samsung Galaxy S9 Dual Chip Android 8.0 Tela 5.8",
+                  "price": 1749.00,
+                  "image": "https://www.oficinadanet.com.br/imagens/obj_item/89/s8-tinha.jpg",
+                  "subprice":145.75
+                
+                },
+                {
+                    "id":2,
+                    "name": "Smartphone Samsung Galaxy S9 Dual Chip Android 8.0 Tela 5.8",
+                    "price": 1749.00,
+                    "image": "https://www.oficinadanet.com.br/imagens/obj_item/89/s8-tinha.jpg",
+                    "subprice":145.75
+                  },
+                  {
+                    "id":3,
+                    "name": "Smartphone Samsung Galaxy S9 Dual Chip Android 8.0 Tela 5.8",
+                    "price": 1749.00,
+                    "image": "https://www.oficinadanet.com.br/imagens/obj_item/89/s8-tinha.jpg",
+                    "subprice":145.75
+                  }
+            ]           

@@ -3,7 +3,7 @@ import Component from 'react'
 import styled from 'styled-components'
 
 const Background = styled.section`
- background-color: #0049F2;
+ background-color: rgba(0, 73, 242, 0.7);
  color: #FFFCFC;
  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  width:100%;
