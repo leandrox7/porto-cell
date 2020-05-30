@@ -4,26 +4,37 @@ import styled from 'styled-components'
 
 
 const Box = styled.div`
- width:300px;
- margin-left:10px;
- margin-right:10px;
+ width:206px;
+ height:264px;
+ margin: 50px 10px 10px 10px;
+ padding: 10px 10px 10px 10px;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ color:#707070;
  display:inline-block;
+ 
+ :hover  {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
 `;
 
 const Name = styled.div`
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  font-size:14px;
+ 
 `;
 
 const Price = styled.div`
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:20px;
+  margin-top:25px;
+  margin-bottom:2px;  
 `;
 
 const SubPrice = styled.div`
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:12px;
 `;
 
 const Image = styled.img`
-width:300px;
+width:200px;
 height:auto;
 `
 
