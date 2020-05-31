@@ -1,6 +1,7 @@
 import React from 'react'
 import Component from 'react'
 import styled from 'styled-components'
+import Link from 'next/link'
 
 
 const Box = styled.div`
@@ -39,19 +40,24 @@ height:auto;
 `
 
 class Card extends React.Component {
-    render() {
-        
-            return (
+  render() {
 
-                <Box id={this.props.data.id}>
-                    <Image src={this.props.data.image} />
-                    <Name>{this.props.data.name}</Name>
-                    <Price>R$ {this.props.data.price}</Price>
-                    <SubPrice>12x de {this.props.data.subprice} sem juros</SubPrice>
-                </Box>
-            )
-        }
-        
-    
+    return (
+
+
+      <Link href={{ pathname: '/product', query: { id: this.props.data.id } }}>
+        <Box id={this.props.data.id}>
+          <Image src={this.props.data.image} />
+          <Name>{this.props.data.name}</Name>
+          <Price>R$ {this.props.data.price}</Price>
+          <SubPrice>12x de {this.props.data.subprice} sem juros</SubPrice>
+        </Box>
+      </Link>
+
+
+    )
+  }
+
+
 }
 export default Card;

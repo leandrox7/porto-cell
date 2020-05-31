@@ -13,19 +13,16 @@ function MarketplacePage() {
 
             <Container>
                <Marketplace> 
+                   <Card data={Data[0]}></Card>
                    <Card data={Data[1]}></Card>
+                   <Card data={Data[2]}></Card>
+                   <Card data={Data[0]}></Card>
                    <Card data={Data[1]}></Card>
+                   <Card data={Data[2]}></Card>
+                   <Card data={Data[0]}></Card>
                    <Card data={Data[1]}></Card>
-                   <Card data={Data[1]}></Card>
-                   <Card data={Data[1]}></Card>
-                   <Card data={Data[1]}></Card>
-                   <Card data={Data[1]}></Card>
-                   <Card data={Data[1]}></Card>
-                   <Card data={Data[1]}></Card>
-                   <Card data={Data[1]}></Card>
-                   <Card data={Data[1]}></Card>
-                   <Card data={Data[1]}></Card>
-                   <Card data={Data[1]}></Card>
+                   <Card data={Data[2]}></Card>
+                   
 
                
                </Marketplace>
