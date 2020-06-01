@@ -1,13 +1,16 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Container from '../components/Container'
-import Data from '../src/product.json'
 import styled from 'styled-components'
-
+import axios from 'axios'
+import { withRouter } from 'next/router'
+import Link from 'next/link'
+import { route } from 'next/dist/next-server/server/router'
 
 const Image = styled.img`
- width:600px;
+ width:300px;
  height:auto;
+ margin-right:150px;
 
 `;
 const Name = styled.div`
@@ -96,33 +99,66 @@ display:inline-block;
 margin-top:100px;
 `;
 
-function ProductPage() {
-    return (
+
+
+class ProductPage extends React.Component {
+    
+    static getInitialProps ({ query: { id } }) {
+        return { _id: id }
+      }
+    
+    constructor(props) {
+        super(props);
+        this.state = { teste: this.props._id,
+                        product:[]
+                    };
+      }
+
+    
+    state = {
+       
+        product:[],
+    };
+
+    componentDidMount	(){
+        axios.get('https://localhost:44300/api/produto/'+ this.props._id)
+        .then(res =>{
+            console.log(res);
+            
+            this.setState({product: res.data});
+        })
+    }
+   render(){
+
+
+       return (
         <section>
+            
             <Navbar />
             <Container>
                 <BoxLeft>
-                    <Image src={Data.image}></Image>
+                    <Image src={this.state.product.image}></Image>
                 </BoxLeft>
 
                 <BoxRight>
-                    <Name>{Data.name}</Name>
-                    <Payment>R$ {Data.price}</Payment>
+                    <Name>{this.state.product.name}</Name>
+                    <Payment>R$ {this.state.product.price}</Payment>
                     <Button>Comprar</Button>
-                    <Subprice>12x de {Data.subprice} sem juros</Subprice>
+                    <Subprice>12x de {this.state.product.subprice} sem juros</Subprice>
                     
                 </BoxRight>
 
                 <BoxBottom>
                     <Information>Informações do Produto</Information>
                     <Description>
-                        {Data.description}
+                        {this.state.product.description}
                     </Description>
                 </BoxBottom>
             </Container>
 
         </section>
     )
+   } 
 }
 
 export default ProductPage

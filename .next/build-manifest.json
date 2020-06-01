@@ -1,8 +1,8 @@
 {
   "devFiles": [
     "static/runtime/react-refresh.js",
-    "static/development/dll/dll_f9de5cbc314a1e41f91e.js",
-    "static/development/dll/dll_f9de5cbc314a1e41f91e.js.map"
+    "static/development/dll/dll_7c1a04da7f30acf879f5.js",
+    "static/development/dll/dll_7c1a04da7f30acf879f5.js.map"
   ],
   "lowPriorityFiles": [
     "static/development/_buildManifest.js",
@@ -21,6 +21,10 @@
       "static/runtime/polyfills.js"
     ],
     "/marketplace": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/product": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

@@ -2,7 +2,7 @@ import React from 'react'
 import Component from 'react'
 import styled from 'styled-components'
 import Link from 'next/link'
-
+import { withRouter } from 'next/router'
 
 const Box = styled.div`
  width:206px;

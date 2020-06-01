@@ -38,4 +38,5 @@ jspm_packages
 .next
 
 # Para ignorar todos os arquivos e sub-pastas da pasta next/
+next
 next/
