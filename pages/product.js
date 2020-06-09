@@ -121,7 +121,7 @@ class ProductPage extends React.Component {
     };
 
     componentDidMount	(){
-        axios.get('https://localhost:44300/api/produto/'+ this.props._id)
+        axios.get('https://localhost:5001/api/produto/'+ this.props._id)
         .then(res =>{
             console.log(res);
             
