@@ -6,7 +6,7 @@ import { withRouter } from 'next/router'
 
 const Box = styled.div`
  width:206px;
- height:264px;
+ height:350px;
  margin: 50px 10px 10px 10px;
  padding: 10px 10px 10px 10px;
  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -36,7 +36,7 @@ const SubPrice = styled.div`
 
 const Image = styled.img`
 width:200px;
-height:auto;
+height:210px;
 `
 
 class Card extends React.Component {

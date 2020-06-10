@@ -5,32 +5,62 @@ import Container from '../components/Container'
 import Card from '../components/Card'
 import Data from '../src/marketplace.json'
 import Marketplace from '../components/Marketplace'
+import axios from 'axios'
+import { withRouter } from 'next/router'
+import Link from 'next/link'
+import { route } from 'next/dist/next-server/server/router'
 
-function MarketplacePage() {
-    return (
+class MarketplacePage extends React.Component{
+    static getInitialProps ({ query: { id } }) {
+        return { _id: id }
+      }
+    
+    constructor(props) {
+        super(props);
+        this.state = { teste: this.props._id,
+                        product:[]
+                    };
+      }
+
+    
+    state = {
+       
+        product:[],
+    };
+
+    componentDidMount	(){
+        axios.get('https://localhost:5001/api/produto')
+        .then(res =>{
+            console.log(res);
+            
+            this.setState({product: res.data});
+            console.log(this.state.product[1].name);
+        })
+    }
+    render(){
+return (
         <section>
             <Navbar />
 
             <Container>
                <Marketplace> 
-                   <Card data={Data[0]}></Card>
-                   <Card data={Data[1]}></Card>
-                   <Card data={Data[2]}></Card>
-                   <Card data={Data[0]}></Card>
-                   <Card data={Data[1]}></Card>
-                   <Card data={Data[2]}></Card>
-                   <Card data={Data[0]}></Card>
-                   <Card data={Data[1]}></Card>
-                   <Card data={Data[2]}></Card>
+               {this.state.product.map(item => (
+           
+                <Card key={item} data={item}></Card>
+           
+          ))}
+                 
                    
-
-               
+                   
+                     
                </Marketplace>
             
             </Container>
         </section>
 
     )
+    }
+    
 }
 
 export default MarketplacePage

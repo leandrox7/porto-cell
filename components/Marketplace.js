@@ -18,6 +18,7 @@ const Box = styled.div`
 
  height:auto;
  float:left;
+ 
 
 `;
 
