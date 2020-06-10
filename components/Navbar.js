@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { withRouter } from 'next/router'
 
 const Background = styled.section`
- background-color: rgba(0, 73, 242, 0.7);
+ background-color: #e60014;
  color: #FFFCFC;
  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  width:100%;
