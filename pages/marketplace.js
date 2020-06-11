@@ -44,15 +44,8 @@ return (
 
             <Container>
                <Marketplace> 
-               {this.state.product.map(item => (
-           
-                <Card key={item} data={item}></Card>
-           
-          ))}
-                 
-                   
-                   
-                     
+               {this.state.product.map(item => (<Card key={item} data={item}></Card>))}
+        
                </Marketplace>
             
             </Container>
