@@ -29,7 +29,7 @@ class MarketplacePage extends React.Component{
     };
 
     componentDidMount	(){
-        axios.get('https://localhost:5001/api/produto')
+        axios.get('https://masterapi7.azurewebsites.net/api/smartphones')
         .then(res =>{
             console.log(res);
             

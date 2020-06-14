@@ -119,9 +119,9 @@ class ProductPage extends React.Component {
        
         product:[],
     };
-
+ 
     componentDidMount	(){
-        axios.get('https://localhost:5001/api/produto/'+ this.props._id)
+        axios.get('https://masterapi7.azurewebsites.net/api/smartphones/'+ this.props._id)
         .then(res =>{
             console.log(res);
             

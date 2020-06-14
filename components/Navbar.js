@@ -33,7 +33,7 @@ const Title = styled.h2`
  font-size:2.5rem;
  margin-block-start: 0.43em;
  margin-block-end: 0.23em;
- padding-left:20%;
+ padding-left:0%;
 `;
 const SubTitle = styled.div`
  font-size:1rem;

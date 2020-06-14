@@ -2,6 +2,8 @@ import Head from 'next/head'
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Container from '../components/Container'
+import Modal from '../components/Modal'
+
 
 function HomePage() {
     return (
@@ -13,7 +15,11 @@ function HomePage() {
 
             <Container>
             <div>teste</div>
-            </Container>
+                <Modal/>    
+               
+               
+               
+        </Container>
         </section>
 
     )
