@@ -39,7 +39,7 @@ font-size:35px;
 `;
 
 const Button = styled.button`
-background-color:#306BF4;
+background-color:#e60014;
 width:200px;
 height:50px;
 border:none;
@@ -64,7 +64,7 @@ margin-right:80px;
 }
 
 :active {
-  background-color:#306BF5;
+  background-color:#e60014;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -119,9 +119,9 @@ class ProductPage extends React.Component {
        
         product:[],
     };
-
+ 
     componentDidMount	(){
-        axios.get('https://localhost:5001/api/produto/'+ this.props._id)
+        axios.get('https://masterapi7.azurewebsites.net/api/smartphones/'+ this.props._id)
         .then(res =>{
             console.log(res);
             

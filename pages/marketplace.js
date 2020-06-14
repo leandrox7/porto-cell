@@ -29,7 +29,7 @@ class MarketplacePage extends React.Component{
     };
 
     componentDidMount	(){
-        axios.get('https://localhost:5001/api/produto')
+        axios.get('https://masterapi7.azurewebsites.net/api/smartphones')
         .then(res =>{
             console.log(res);
             
@@ -44,15 +44,8 @@ return (
 
             <Container>
                <Marketplace> 
-               {this.state.product.map(item => (
-           
-                <Card key={item} data={item}></Card>
-           
-          ))}
-                 
-                   
-                   
-                     
+               {this.state.product.map(item => (<Card key={item} data={item}></Card>))}
+        
                </Marketplace>
             
             </Container>

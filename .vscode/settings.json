@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/c968d00f-5614-4b51-ab8c-1665814fddb9/resourceGroups/grupo1/providers/Microsoft.Web/sites/portocell",
+    "appService.deploySubpath": "."
+}
